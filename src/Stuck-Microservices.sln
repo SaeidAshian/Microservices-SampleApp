@@ -3,9 +3,29 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31606.5
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{276A4A5C-535A-41ED-9BE6-85368C0075AD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Instruments", "Instruments", "{8898563B-8E36-433B-9DC9-7A7762D923D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Instrument.API", "Services\Instruments\Instrument.API\Instrument.API.csproj", "{E0AA5E38-4F13-4D06-B192-9ADC934C4ED1}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E0AA5E38-4F13-4D06-B192-9ADC934C4ED1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0AA5E38-4F13-4D06-B192-9ADC934C4ED1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0AA5E38-4F13-4D06-B192-9ADC934C4ED1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0AA5E38-4F13-4D06-B192-9ADC934C4ED1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8898563B-8E36-433B-9DC9-7A7762D923D6} = {276A4A5C-535A-41ED-9BE6-85368C0075AD}
+		{E0AA5E38-4F13-4D06-B192-9ADC934C4ED1} = {8898563B-8E36-433B-9DC9-7A7762D923D6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D7FF80EE-91A0-4ED5-B367-6691BE751C73}
